@@ -13,6 +13,7 @@ resource "aws_kms_key" "logs_key" {
     git_org              = "5toCode"
     git_repo             = "github-terragoat"
   }
+  enable_key_rotation = true
 }
 
 resource "aws_kms_alias" "logs_key_alias" {
